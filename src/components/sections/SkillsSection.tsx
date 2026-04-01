@@ -1,3 +1,5 @@
+"use client";
+
 import type { LucideIcon } from "lucide-react";
 import {
 	Atom,
@@ -11,6 +13,7 @@ import {
 	Server,
 	Wind,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 
 const skills: { icon: LucideIcon; label: string }[] = [
@@ -27,15 +30,17 @@ const skills: { icon: LucideIcon; label: string }[] = [
 ];
 
 function SkillsSection() {
+	const t = useTranslations("skills");
+
 	return (
-		<section className="px-[120px] py-[80px]">
+		<section className="px-30 py-20">
 			{/* Header */}
 			<div className="mb-16 flex flex-col items-center gap-3">
 				<Badge variant="outline" className="bg-primary/[0.07]">
-					Skills
+					{t("badge")}
 				</Badge>
-				<h2 className="text-[48px] font-bold leading-tight text-foreground">Tech Stack</h2>
-				<p className="text-base text-muted-foreground">Technologies and tools I work with daily</p>
+				<h2 className="text-[48px] font-bold leading-tight text-foreground">{t("title")}</h2>
+				<p className="text-base text-muted-foreground">{t("description")}</p>
 			</div>
 
 			{/* Grid 5×2 */}
@@ -57,7 +62,7 @@ function SkillsSection() {
 
 function SkillCard({ icon: Icon, label }: { icon: LucideIcon; label: string }) {
 	return (
-		<div className="flex h-[120px] flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-6">
+		<div className="flex h-30 flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-6">
 			<Icon className="size-8 text-primary" strokeWidth={1.5} />
 			<span className="text-[13px] font-medium text-card-foreground">{label}</span>
 		</div>

@@ -1,5 +1,11 @@
 {
 	"permissions": {
-		"allow": ["Bash(source:*)"]
+		"allow": [
+			"Bash(source:*)",
+			"Bash(pnpm add:*)",
+			"Bash(export PATH=\"$HOME/.nvm/versions/node/v22.21.0/bin:$PATH\")",
+			"Bash(pnpm lint:fix)",
+			"Bash(pnpm lint:*)"
+		]
 	}
 }

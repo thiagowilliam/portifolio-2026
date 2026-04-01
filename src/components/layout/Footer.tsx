@@ -1,13 +1,19 @@
-const navLinks = [
-	{ label: "Home", href: "#" },
-	{ label: "About", href: "#about" },
-	{ label: "Projects", href: "#projects" },
-	{ label: "Contact", href: "#contact" },
-];
+"use client";
+
+import { useTranslations } from "next-intl";
 
 function Footer() {
+	const t = useTranslations("footer");
+
+	const navLinks = [
+		{ label: t("home"), href: "#" },
+		{ label: t("about"), href: "#about" },
+		{ label: t("projects"), href: "#projects" },
+		{ label: t("contact"), href: "#contact" },
+	];
+
 	return (
-		<footer className="border-t border-border px-[120px] py-8">
+		<footer className="border-t border-border px-30 py-8">
 			<div className="flex items-center justify-between">
 				{/* Logo */}
 				<a href="/" className="flex items-center gap-2">
@@ -30,9 +36,7 @@ function Footer() {
 			</div>
 
 			{/* Copyright */}
-			<p className="mt-6 text-center font-mono text-xs text-muted-foreground">
-				© 2025 devPortfolio. Built with Next.js & Tailwind CSS.
-			</p>
+			<p className="mt-6 text-center font-mono text-xs text-muted-foreground">{t("copyright")}</p>
 		</footer>
 	);
 }

@@ -1,14 +1,21 @@
-import { Globe } from "lucide-react";
+"use client";
 
-const NAV_LINKS = [
-	{ label: "Home", href: "#", active: true },
-	{ label: "About", href: "#about", active: false },
-	{ label: "Projects", href: "#projects", active: false },
-	{ label: "Skills", href: "#skills", active: false },
-	{ label: "Contact", href: "#contact", active: false },
-];
+import { Globe } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useLocaleToggle } from "@/components/providers/LocaleProvider";
 
 function Navbar() {
+	const t = useTranslations("navbar");
+	const { locale, toggleLocale } = useLocaleToggle();
+
+	const NAV_LINKS = [
+		{ label: t("home"), href: "#", active: true },
+		{ label: t("about"), href: "#about", active: false },
+		{ label: t("projects"), href: "#projects", active: false },
+		{ label: t("skills"), href: "#skills", active: false },
+		{ label: t("contact"), href: "#contact", active: false },
+	];
+
 	return (
 		<header className="w-full border-b border-muted">
 			<nav className="mx-auto flex max-w-7xl items-center justify-between px-12 py-4">
@@ -32,16 +39,29 @@ function Navbar() {
 					))}
 				</ul>
 
-				<div className="flex flex-row items-center gap-2 rounded-md bg-muted px-2.5 py-1.5">
+				<button
+					type="button"
+					onClick={toggleLocale}
+					className="flex cursor-pointer flex-row items-center gap-2 rounded-md bg-muted px-2.5 py-1.5 transition-opacity hover:opacity-80"
+					aria-label="Toggle language"
+				>
 					<Globe size={14} className="text-muted-foreground" />
-					<span className="font-mono text-[10px] font-semibold tracking-[0.1em] text-primary">
+					<span
+						className={`font-mono text-[10px] font-semibold tracking-widest transition-colors ${
+							locale === "pt-BR" ? "text-primary" : "text-muted-foreground"
+						}`}
+					>
 						PT-BR
 					</span>
 					<span className="text-[#475569]">/</span>
-					<span className="font-mono text-[10px] font-medium tracking-[0.1em] text-[#64748B]">
+					<span
+						className={`font-mono text-[10px] font-medium tracking-widest transition-colors ${
+							locale === "en" ? "text-primary" : "text-muted-foreground"
+						}`}
+					>
 						EN
 					</span>
-				</div>
+				</button>
 			</nav>
 		</header>
 	);

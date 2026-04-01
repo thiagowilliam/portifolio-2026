@@ -1,47 +1,50 @@
+"use client";
+
 import { Github, Linkedin, Mail, MapPin, MessageCircle, Twitter } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-const infoCards = [
-	{
-		icon: Mail,
-		label: "Email",
-		value: "hello@devportfolio.com",
-		href: "mailto:hello@devportfolio.com",
-	},
-	{
-		icon: MapPin,
-		label: "Location",
-		value: "São Paulo, Brazil",
-		href: null,
-	},
-	{
-		icon: Github,
-		label: "Social",
-		value: "GitHub · LinkedIn · Twitter",
-		href: null,
-		socials: [
-			{ icon: Github, href: "https://github.com", label: "GitHub" },
-			{ icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-			{ icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-		],
-	},
-];
-
 function ContactSection() {
+	const t = useTranslations("contact");
+
+	const infoCards = [
+		{
+			icon: Mail,
+			label: t("email_label"),
+			value: "hello@devportfolio.com",
+			href: "mailto:hello@devportfolio.com",
+			socials: null,
+		},
+		{
+			icon: MapPin,
+			label: t("location_label"),
+			value: t("location_value"),
+			href: null,
+			socials: null,
+		},
+		{
+			icon: Github,
+			label: t("social_label"),
+			value: null,
+			href: null,
+			socials: [
+				{ icon: Github, href: "https://github.com", label: "GitHub" },
+				{ icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+				{ icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+			],
+		},
+	];
+
 	return (
-		<section id="contact" className="bg-surface px-[120px] py-[80px]">
+		<section id="contact" className="bg-surface px-30 py-20">
 			{/* Header */}
 			<div className="mb-16 flex flex-col items-center gap-3">
 				<Badge variant="outline" className="bg-primary/[0.07]">
-					Contact
+					{t("badge")}
 				</Badge>
-				<h2 className="text-[48px] font-bold leading-tight text-foreground">
-					Let&apos;s Work Together
-				</h2>
-				<p className="max-w-lg text-center text-base text-muted-foreground">
-					Have a project in mind? Let&apos;s work together to build something amazing.
-				</p>
+				<h2 className="text-[48px] font-bold leading-tight text-foreground">{t("title")}</h2>
+				<p className="max-w-lg text-center text-base text-muted-foreground">{t("description")}</p>
 			</div>
 
 			{/* Info cards */}
@@ -95,15 +98,13 @@ function ContactSection() {
 						<MessageCircle className="size-6 text-white" strokeWidth={1.5} />
 					</div>
 					<div>
-						<p className="font-semibold text-[#0A0F1C]">WhatsApp</p>
-						<p className="text-sm text-[#0A0F1C]/70">
-							Prefere conversar pelo WhatsApp? Me chame para uma resposta mais rápida!
-						</p>
+						<p className="font-semibold text-[#0A0F1C]">{t("whatsapp_title")}</p>
+						<p className="text-sm text-[#0A0F1C]/70">{t("whatsapp_description")}</p>
 					</div>
 				</div>
 				<Button className="shrink-0 bg-white/20 text-[#0A0F1C] hover:bg-white/30" asChild>
 					<a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
-						Iniciar conversa
+						{t("whatsapp_cta")}
 					</a>
 				</Button>
 			</div>

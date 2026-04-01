@@ -1,0 +1,97 @@
+{
+	"navbar": {
+		"home": "Home",
+		"about": "About",
+		"projects": "Projects",
+		"skills": "Skills",
+		"contact": "Contact"
+	},
+	"hero": {
+		"greeting": "Hi, I'm Alex Chen",
+		"role": "Frontend Developer",
+		"description": "I craft exceptional digital experiences with modern web technologies. Passionate about clean code, intuitive design, and building products that make a difference.",
+		"cta_work": "View My Work",
+		"cta_contact": "Get In Touch"
+	},
+	"about": {
+		"badge": "About",
+		"title": "About Me",
+		"bio1": "I'm a Frontend Developer with 5+ years of experience building modern, responsive web applications. I specialize in the React ecosystem and have a deep passion for creating intuitive interfaces that perform flawlessly.",
+		"bio2": "My approach combines clean architecture with pixel-perfect implementation. I believe great software is built at the intersection of technical excellence and thoughtful user experience.",
+		"stats": {
+			"projects": "PROJECTS",
+			"experience": "YRS EXP.",
+			"clients": "CLIENTS"
+		}
+	},
+	"skills": {
+		"badge": "Skills",
+		"title": "Tech Stack",
+		"description": "Technologies and tools I work with daily"
+	},
+	"experience": {
+		"badge": "Experience",
+		"title": "Professional Experience",
+		"description": "My journey building modern web applications across different companies and industries",
+		"items": [
+			{
+				"period": "2022 – Present",
+				"company": "TeakData Solutions",
+				"title": "Senior Frontend Developer",
+				"description": "Led frontend architecture migration from Angular to React, improving performance by 40%. Built reusable component libraries with TypeScript and Tailwind CSS. Mentored junior developers and established code standards and best practices."
+			},
+			{
+				"period": "2021 – 2022",
+				"company": "Digital Agency Plus",
+				"title": "Frontend Developer",
+				"description": "Developed responsive web applications using React and Angular for clients in fintech and e-commerce. Implemented design systems with Tailwind CSS, reducing development time by 30%. Collaborated with UX designers to deliver pixel-perfect interfaces."
+			},
+			{
+				"period": "2019 – 2021",
+				"company": "Startups Brazil",
+				"title": "Junior Frontend Developer",
+				"description": "Built interactive user interfaces with React and JavaScript for early-stage startups. Integrated REST APIs, implemented responsive layouts, and contributed to improving web accessibility standards across multiple products."
+			}
+		]
+	},
+	"projects": {
+		"badge": "Projects",
+		"title": "Featured Work",
+		"description": "A selection of projects that showcase my expertise in modern frontend development",
+		"view": "View Project",
+		"source": "Source Code",
+		"items": [
+			{
+				"title": "E-Commerce Dashboard",
+				"description": "A comprehensive analytics dashboard built with Next.js and TypeScript. Features data visualization, responsive design, and admin route management."
+			},
+			{
+				"title": "Task Management App",
+				"description": "A collaborative task management platform built with React and Angular. Features drag-and-drop kanban boards, real-time updates, and team collaboration."
+			},
+			{
+				"title": "Dev Blog Platform",
+				"description": "A developer blog platform with MDX support, built with Next.js. Features syntax highlighting, SEO optimization, and a custom CMS with Tailwind CSS styling."
+			}
+		]
+	},
+	"contact": {
+		"badge": "Contact",
+		"title": "Let's Work Together",
+		"description": "Have a project in mind? Let's work together to build something amazing.",
+		"email_label": "Email",
+		"location_label": "Location",
+		"location_value": "São Paulo, Brazil",
+		"social_label": "Social",
+		"whatsapp_title": "WhatsApp",
+		"whatsapp_description": "Prefer to chat on WhatsApp? Message me for a faster response!",
+		"whatsapp_cta": "Start conversation"
+	},
+	"footer": {
+		"copyright": "© 2025 devPortfolio. Built with Next.js & Tailwind CSS.",
+		"home": "Home",
+		"about": "About",
+		"projects": "Projects",
+		"contact": "Contact"
+	}
+}

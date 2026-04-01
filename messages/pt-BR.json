@@ -1,0 +1,97 @@
+{
+	"navbar": {
+		"home": "Home",
+		"about": "Sobre",
+		"projects": "Projetos",
+		"skills": "Skills",
+		"contact": "Contato"
+	},
+	"hero": {
+		"greeting": "Olá, sou Alex Chen",
+		"role": "Desenvolvedor Frontend",
+		"description": "Crio experiências digitais excepcionais com tecnologias web modernas. Apaixonado por código limpo, design intuitivo e produtos que fazem a diferença.",
+		"cta_work": "Ver Projetos",
+		"cta_contact": "Entrar em Contato"
+	},
+	"about": {
+		"badge": "Sobre",
+		"title": "Sobre Mim",
+		"bio1": "Sou um Desenvolvedor Frontend com mais de 5 anos de experiência construindo aplicações web modernas e responsivas. Especializo-me no ecossistema React e tenho uma profunda paixão por criar interfaces intuitivas que performam de forma impecável.",
+		"bio2": "Minha abordagem combina arquitetura limpa com implementação pixel-perfect. Acredito que um grande software é construído na interseção entre excelência técnica e experiência de usuário bem pensada.",
+		"stats": {
+			"projects": "PROJETOS",
+			"experience": "ANOS EXP.",
+			"clients": "CLIENTES"
+		}
+	},
+	"skills": {
+		"badge": "Skills",
+		"title": "Tech Stack",
+		"description": "Tecnologias e ferramentas com que trabalho diariamente"
+	},
+	"experience": {
+		"badge": "Experiência",
+		"title": "Experiência Profissional",
+		"description": "Minha trajetória construindo aplicações web modernas em diferentes empresas e setores",
+		"items": [
+			{
+				"period": "2022 – Presente",
+				"company": "TeakData Solutions",
+				"title": "Desenvolvedor Frontend Sênior",
+				"description": "Liderou a migração da arquitetura frontend de Angular para React, melhorando a performance em 40%. Construiu bibliotecas de componentes reutilizáveis com TypeScript e Tailwind CSS. Mentorou desenvolvedores júnior e estabeleceu padrões de código e melhores práticas."
+			},
+			{
+				"period": "2021 – 2022",
+				"company": "Digital Agency Plus",
+				"title": "Desenvolvedor Frontend",
+				"description": "Desenvolveu aplicações web responsivas usando React e Angular para clientes em fintech e e-commerce. Implementou sistemas de design com Tailwind CSS, reduzindo o tempo de desenvolvimento em 30%. Colaborou com designers de UX para entregar interfaces pixel-perfect."
+			},
+			{
+				"period": "2019 – 2021",
+				"company": "Startups Brazil",
+				"title": "Desenvolvedor Frontend Júnior",
+				"description": "Construiu interfaces de usuário interativas com React e JavaScript para startups em estágio inicial. Integrou APIs REST, implementou layouts responsivos e contribuiu para melhorar os padrões de acessibilidade web em múltiplos produtos."
+			}
+		]
+	},
+	"projects": {
+		"badge": "Projetos",
+		"title": "Trabalhos em Destaque",
+		"description": "Uma seleção de projetos que demonstram minha expertise em desenvolvimento frontend moderno",
+		"view": "Ver Projeto",
+		"source": "Código Fonte",
+		"items": [
+			{
+				"title": "E-Commerce Dashboard",
+				"description": "Um dashboard analítico completo construído com Next.js e TypeScript. Com visualização de dados, design responsivo e gerenciamento de rotas administrativas."
+			},
+			{
+				"title": "Gerenciador de Tarefas",
+				"description": "Uma plataforma colaborativa de gestão de tarefas construída com React e Angular. Com quadros kanban drag-and-drop, atualizações em tempo real e colaboração em equipe."
+			},
+			{
+				"title": "Plataforma de Blog Dev",
+				"description": "Uma plataforma de blog para desenvolvedores com suporte a MDX, construída com Next.js. Com destaque de sintaxe, otimização de SEO e um CMS customizado com estilização Tailwind CSS."
+			}
+		]
+	},
+	"contact": {
+		"badge": "Contato",
+		"title": "Vamos Trabalhar Juntos",
+		"description": "Tem um projeto em mente? Vamos trabalhar juntos para construir algo incrível.",
+		"email_label": "Email",
+		"location_label": "Localização",
+		"location_value": "São Paulo, Brasil",
+		"social_label": "Redes Sociais",
+		"whatsapp_title": "WhatsApp",
+		"whatsapp_description": "Prefere conversar pelo WhatsApp? Me chame para uma resposta mais rápida!",
+		"whatsapp_cta": "Iniciar conversa"
+	},
+	"footer": {
+		"copyright": "© 2025 devPortfolio. Construído com Next.js & Tailwind CSS.",
+		"home": "Home",
+		"about": "Sobre",
+		"projects": "Projetos",
+		"contact": "Contato"
+	}
+}

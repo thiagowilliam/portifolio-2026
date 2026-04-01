@@ -1,29 +1,34 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Fragment } from "react";
 import { Badge } from "@/components/ui/badge";
 
-const stats = [
-	{ value: "50+", label: "PROJETOS" },
-	{ value: "5+", label: "ANOS EXP." },
-	{ value: "20+", label: "CLIENTES" },
-];
-
 function AboutSection() {
+	const t = useTranslations("about");
+
+	const stats = [
+		{ value: "50+", label: t("stats.projects") },
+		{ value: "5+", label: t("stats.experience") },
+		{ value: "20+", label: t("stats.clients") },
+	];
+
 	return (
-		<section className="bg-surface px-[120px] py-[80px]">
+		<section className="bg-surface px-30 py-20">
 			{/* Header */}
 			<div className="mb-16 flex flex-col items-center gap-4">
 				<Badge variant="outline" className="bg-primary/[0.07]">
-					Sobre
+					{t("badge")}
 				</Badge>
-				<h2 className="text-[48px] font-bold leading-tight text-foreground">About Me</h2>
+				<h2 className="text-[48px] font-bold leading-tight text-foreground">{t("title")}</h2>
 			</div>
 
 			{/* Content */}
 			<div className="flex items-start gap-20">
 				{/* Left: foto */}
 				<div className="w-full">
-					<div className="relative h-[420px] w-full overflow-hidden rounded-xl bg-card">
+					<div className="relative h-105 w-full overflow-hidden rounded-xl bg-card">
 						{/* Substitua por sua foto em /public/about-photo.jpg */}
 						<Image src="/about-photo.jpg" alt="Developer at work" fill className="object-cover" />
 					</div>
@@ -31,16 +36,8 @@ function AboutSection() {
 
 				{/* Right: bio + stats */}
 				<div className="flex w-full flex-col gap-8">
-					<p className="text-base leading-[1.7] text-muted-foreground">
-						Sou um Desenvolvedor Frontend com mais de 5 anos de experiência construindo aplicações
-						web modernas e responsivas. Especializo-me no ecossistema React e tenho uma profunda
-						paixão por criar interfaces intuitivas que performam de forma impecável.
-					</p>
-					<p className="text-base leading-[1.7] text-muted-foreground">
-						Minha abordagem combina arquitetura limpa com implementação pixel-perfect. Acredito que
-						um grande software é construído na interseção entre excelência técnica e experiência de
-						usuário bem pensada.
-					</p>
+					<p className="text-base leading-[1.7] text-muted-foreground">{t("bio1")}</p>
+					<p className="text-base leading-[1.7] text-muted-foreground">{t("bio2")}</p>
 
 					{/* Stats */}
 					<div className="flex items-center gap-8">
