@@ -31,7 +31,7 @@ function ProjectsSection() {
 	const items = t.raw("items") as Array<{ title: string; description: string }>;
 
 	return (
-		<section className="px-30 py-20">
+		<section id="projects" className="px-30 py-20">
 			{/* Header */}
 			<div className="mb-16 flex flex-col items-center gap-3">
 				<Badge variant="outline" className="bg-primary/[0.07]">

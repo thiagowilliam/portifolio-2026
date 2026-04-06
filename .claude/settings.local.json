@@ -1,11 +1,12 @@
 {
-	"permissions": {
-		"allow": [
-			"Bash(source:*)",
-			"Bash(pnpm add:*)",
-			"Bash(export PATH=\"$HOME/.nvm/versions/node/v22.21.0/bin:$PATH\")",
-			"Bash(pnpm lint:fix)",
-			"Bash(pnpm lint:*)"
-		]
-	}
+  "permissions": {
+    "allow": [
+      "Bash(source:*)",
+      "Bash(pnpm add:*)",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/v22.21.0/bin:$PATH\")",
+      "Bash(pnpm lint:fix)",
+      "Bash(pnpm lint:*)",
+      "Bash(grep -n 'id=' /Users/thiagowill/Projetos/portifolio-2026/src/components/sections/*.tsx)"
+    ]
+  }
 }

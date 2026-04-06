@@ -7,7 +7,7 @@ function HeroSection() {
 	const t = useTranslations("hero");
 
 	return (
-		<section className="flex flex-col items-center gap-8 px-30 pb-30 pt-25">
+		<section id="home" className="flex flex-col items-center gap-8 px-30 pb-30 pt-25">
 			<p aria-hidden="true" className="font-mono text-sm font-medium text-[#64748B]">
 				$ whoami
 			</p>

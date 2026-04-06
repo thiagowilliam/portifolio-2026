@@ -1,42 +1,112 @@
 "use client";
 
 import { Globe } from "lucide-react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import { useLocaleToggle } from "@/components/providers/LocaleProvider";
+
+const SECTION_IDS = ["home", "about", "skills", "experience", "projects", "contact"];
+
+function useActiveSection() {
+	const [activeSection, setActiveSection] = useState("home");
+
+	useEffect(() => {
+		const observers: IntersectionObserver[] = [];
+
+		for (const id of SECTION_IDS) {
+			const el = document.getElementById(id);
+			if (!el) continue;
+
+			const observer = new IntersectionObserver(
+				([entry]) => {
+					if (entry.isIntersecting) setActiveSection(id);
+				},
+				{ rootMargin: "-40% 0px -55% 0px", threshold: 0 },
+			);
+
+			observer.observe(el);
+			observers.push(observer);
+		}
+
+		return () => { for (const o of observers) o.disconnect(); };
+	}, []);
+
+	return { activeSection, setActiveSection };
+}
 
 function Navbar() {
 	const t = useTranslations("navbar");
 	const { locale, toggleLocale } = useLocaleToggle();
+	const { scrollY } = useScroll();
+	const { activeSection, setActiveSection } = useActiveSection();
+
+	function handleNavClick(e: React.MouseEvent<HTMLAnchorElement>, href: string, sectionId: string) {
+		e.preventDefault();
+		setActiveSection(sectionId);
+		if (href === "#") {
+			window.scrollTo({ top: 0, behavior: "smooth" });
+			return;
+		}
+		document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+	}
+
+	const backgroundColor = useTransform(
+		scrollY,
+		[0, 80],
+		["rgba(10,15,28,0)", "rgba(10,15,28,0.85)"],
+	);
+	const backdropBlur = useTransform(scrollY, [0, 80], ["blur(0px)", "blur(16px)"]);
+	const borderOpacity = useTransform(scrollY, [0, 80], [0, 1]);
+	const paddingY = useTransform(scrollY, [0, 80], [16, 10]);
 
 	const NAV_LINKS = [
-		{ label: t("home"), href: "#", active: true },
-		{ label: t("about"), href: "#about", active: false },
-		{ label: t("projects"), href: "#projects", active: false },
-		{ label: t("skills"), href: "#skills", active: false },
-		{ label: t("contact"), href: "#contact", active: false },
+		{ label: t("home"), href: "#", sectionId: "home" },
+		{ label: t("about"), href: "#about", sectionId: "about" },
+		{ label: t("skills"), href: "#skills", sectionId: "skills" },
+		{ label: t("projects"), href: "#projects", sectionId: "projects" },
+		{ label: t("contact"), href: "#contact", sectionId: "contact" },
 	];
 
 	return (
-		<header className="w-full border-b border-muted">
-			<nav className="mx-auto flex max-w-7xl items-center justify-between px-12 py-4">
+		<motion.header
+			className="fixed top-0 right-0 left-0 z-50 w-full"
+			style={{
+				backgroundColor,
+				backdropFilter: backdropBlur,
+				WebkitBackdropFilter: backdropBlur,
+			}}
+		>
+			<motion.div
+				className="absolute inset-x-0 bottom-0 h-px bg-white/10"
+				style={{ opacity: borderOpacity }}
+			/>
+			<motion.nav
+				className="mx-auto flex max-w-7xl items-center justify-between px-12"
+				style={{ paddingTop: paddingY, paddingBottom: paddingY }}
+			>
 				<span className="font-mono text-[18px] font-bold text-primary">{"<dev.folio/>"}</span>
 
 				<ul className="flex flex-row gap-8">
-					{NAV_LINKS.map((link) => (
-						<li key={link.href}>
-							<a
-								href={link.href}
-								{...(link.active ? { "aria-current": "page" as const } : {})}
-								className={
-									link.active
-										? "font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-primary"
-										: "font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground"
-								}
-							>
-								{link.label}
-							</a>
-						</li>
-					))}
+					{NAV_LINKS.map((link) => {
+						const isActive = activeSection === link.sectionId;
+						return (
+							<li key={link.href}>
+								<a
+									href={link.href}
+									onClick={(e) => handleNavClick(e, link.href, link.sectionId)}
+									{...(isActive ? { "aria-current": "page" as const } : {})}
+									className={
+										isActive
+											? "font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-primary transition-colors"
+											: "font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
+									}
+								>
+									{link.label}
+								</a>
+							</li>
+						);
+					})}
 				</ul>
 
 				<button
@@ -62,8 +132,8 @@ function Navbar() {
 						EN
 					</span>
 				</button>
-			</nav>
-		</header>
+			</motion.nav>
+		</motion.header>
 	);
 }
 

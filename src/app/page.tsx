@@ -1,3 +1,4 @@
+import { BackToTop } from "@/components/layout/BackToTop";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { AboutSection } from "@/components/sections/AboutSection";
@@ -19,7 +20,8 @@ export default function Home() {
 				<ProjectsSection />
 				<ContactSection />
 			</main>
-			<Footer />
+			<BackToTop />
+		<Footer />
 		</>
 	);
 }

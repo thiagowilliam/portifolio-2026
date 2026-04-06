@@ -33,7 +33,7 @@ function SkillsSection() {
 	const t = useTranslations("skills");
 
 	return (
-		<section className="px-30 py-20">
+		<section id="skills" className="px-30 py-20">
 			{/* Header */}
 			<div className="mb-16 flex flex-col items-center gap-3">
 				<Badge variant="outline" className="bg-primary/[0.07]">

@@ -1,6 +1,7 @@
 "use client";
 
 import { Button as ButtonPrimitive } from "@base-ui/react/button";
+import React from "react";
 import { tv, type VariantProps } from "tailwind-variants";
 
 const button = tv({
@@ -45,15 +46,36 @@ const button = tv({
 	},
 });
 
-type ButtonProps = ButtonPrimitive.Props & VariantProps<typeof button>;
+type ButtonProps = Omit<ButtonPrimitive.Props, "className"> &
+	VariantProps<typeof button> & { asChild?: boolean; className?: string };
 
-function Button({ className, variant, size, ...props }: ButtonProps) {
+function Button({ className, variant, size, asChild, children, ...props }: ButtonProps) {
+	if (asChild && React.isValidElement(children)) {
+		const child = children as React.ReactElement<{
+			children?: React.ReactNode;
+			[key: string]: unknown;
+		}>;
+		const { children: childChildren, ...childProps } = child.props;
+		return (
+			<ButtonPrimitive
+				data-slot="button"
+				className={button({ variant, size, className })}
+				render={React.createElement(child.type as string, childProps)}
+				{...props}
+			>
+				{childChildren}
+			</ButtonPrimitive>
+		);
+	}
+
 	return (
 		<ButtonPrimitive
 			data-slot="button"
 			className={button({ variant, size, className })}
 			{...props}
-		/>
+		>
+			{children}
+		</ButtonPrimitive>
 	);
 }
 

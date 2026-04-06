@@ -15,7 +15,7 @@ function AboutSection() {
 	];
 
 	return (
-		<section className="bg-surface px-30 py-20">
+		<section id="about" className="bg-surface px-30 py-20">
 			{/* Header */}
 			<div className="mb-16 flex flex-col items-center gap-4">
 				<Badge variant="outline" className="bg-primary/[0.07]">
