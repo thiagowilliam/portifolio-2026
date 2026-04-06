@@ -7,7 +7,8 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"greeting": "Hi, I'm Alex Chen",
+		"greeting_prefix": "Hi, I'm ",
+		"greeting_name": "Alex Chen",
 		"role": "Frontend Developer",
 		"description": "I craft exceptional digital experiences with modern web technologies. Passionate about clean code, intuitive design, and building products that make a difference.",
 		"cta_work": "View My Work",

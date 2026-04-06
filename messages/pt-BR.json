@@ -7,7 +7,8 @@
 		"contact": "Contato"
 	},
 	"hero": {
-		"greeting": "Olá, sou Alex Chen",
+		"greeting_prefix": "Olá, sou ",
+		"greeting_name": "Alex Chen",
 		"role": "Desenvolvedor Frontend",
 		"description": "Crio experiências digitais excepcionais com tecnologias web modernas. Apaixonado por código limpo, design intuitivo e produtos que fazem a diferença.",
 		"cta_work": "Ver Projetos",
