@@ -6,7 +6,7 @@ import { tv, type VariantProps } from "tailwind-variants";
 
 const button = tv({
 	base: [
-		"inline-flex shrink-0 items-center justify-center gap-1.5",
+		"inline-flex shrink-0 cursor-pointer items-center justify-center gap-1.5",
 		"rounded-md font-medium text-sm whitespace-nowrap select-none",
 		"transition-all outline-none",
 		"focus-visible:ring-3 focus-visible:ring-offset-1",
@@ -59,6 +59,7 @@ function Button({ className, variant, size, asChild, children, ...props }: Butto
 		return (
 			<ButtonPrimitive
 				data-slot="button"
+				nativeButton={false}
 				className={button({ variant, size, className })}
 				render={React.createElement(child.type as string, childProps)}
 				{...props}

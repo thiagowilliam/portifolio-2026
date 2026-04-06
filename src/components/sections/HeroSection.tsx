@@ -83,12 +83,14 @@ function HeroSection() {
 				<Button
 					variant="default"
 					className="px-7 py-3 font-mono text-[13px] font-semibold tracking-[0.05em]"
+					onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
 				>
 					{t("cta_work")}
 				</Button>
 				<Button
 					variant="accent-outline"
 					className="px-7 py-3 font-mono text-[13px] font-semibold tracking-[0.05em]"
+					onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
 				>
 					{t("cta_contact")}
 				</Button>

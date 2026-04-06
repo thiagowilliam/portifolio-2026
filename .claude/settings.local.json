@@ -6,7 +6,8 @@
       "Bash(export PATH=\"$HOME/.nvm/versions/node/v22.21.0/bin:$PATH\")",
       "Bash(pnpm lint:fix)",
       "Bash(pnpm lint:*)",
-      "Bash(grep -n 'id=' /Users/thiagowill/Projetos/portifolio-2026/src/components/sections/*.tsx)"
+      "Bash(grep -n 'id=' /Users/thiagowill/Projetos/portifolio-2026/src/components/sections/*.tsx)",
+      "Bash(grep -n 'mb-16\\\\|Badge\\\\|t\\(\"badge\"\\)\\\\|t\\(\"title\"\\)\\\\|t\\(\"description\"\\)' /Users/thiagowill/Projetos/portifolio-2026/src/components/sections/*.tsx)"
     ]
   }
 }

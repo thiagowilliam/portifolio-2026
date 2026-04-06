@@ -2,6 +2,7 @@
 
 import { ExternalLink, Github } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { SectionHeader } from "@/components/sections/SectionHeader";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -32,14 +33,7 @@ function ProjectsSection() {
 
 	return (
 		<section id="projects" className="px-30 py-20">
-			{/* Header */}
-			<div className="mb-16 flex flex-col items-center gap-3">
-				<Badge variant="outline" className="bg-primary/[0.07]">
-					{t("badge")}
-				</Badge>
-				<h2 className="text-[48px] font-bold leading-tight text-foreground">{t("title")}</h2>
-				<p className="text-base text-muted-foreground">{t("description")}</p>
-			</div>
+			<SectionHeader badge={t("badge")} title={t("title")} description={t("description")} />
 
 			{/* Cards */}
 			<div className="grid grid-cols-3 gap-6">

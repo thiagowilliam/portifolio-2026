@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Fragment } from "react";
-import { Badge } from "@/components/ui/badge";
+import { SectionHeader } from "@/components/sections/SectionHeader";
 
 function AboutSection() {
 	const t = useTranslations("about");
@@ -16,13 +16,7 @@ function AboutSection() {
 
 	return (
 		<section id="about" className="bg-surface px-30 py-20">
-			{/* Header */}
-			<div className="mb-16 flex flex-col items-center gap-4">
-				<Badge variant="outline" className="bg-primary/[0.07]">
-					{t("badge")}
-				</Badge>
-				<h2 className="text-[48px] font-bold leading-tight text-foreground">{t("title")}</h2>
-			</div>
+			<SectionHeader badge={t("badge")} title={t("title")} />
 
 			{/* Content */}
 			<div className="flex items-start gap-20">

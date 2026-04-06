@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { SectionHeader } from "@/components/sections/SectionHeader";
 import { Badge } from "@/components/ui/badge";
 
 const experienceTags = [
@@ -20,14 +21,7 @@ function ExperienceSection() {
 
 	return (
 		<section id="experience" className="bg-surface px-30 py-20">
-			{/* Header */}
-			<div className="mb-16 flex flex-col items-center gap-3">
-				<Badge variant="outline" className="bg-primary/[0.07]">
-					{t("badge")}
-				</Badge>
-				<h2 className="text-[48px] font-bold leading-tight text-foreground">{t("title")}</h2>
-				<p className="max-w-xl text-center text-base text-muted-foreground">{t("description")}</p>
-			</div>
+			<SectionHeader badge={t("badge")} title={t("title")} description={t("description")} />
 
 			{/* Timeline */}
 			<div className="relative mx-auto max-w-225">
