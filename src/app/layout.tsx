@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { headers } from "next/headers";
 import { LocaleProvider } from "@/components/providers/LocaleProvider";
 import enMessages from "../../messages/en.json";
 import ptBRMessages from "../../messages/pt-BR.json";
@@ -15,10 +16,15 @@ const jetbrainsMono = JetBrains_Mono({
 	subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-	title: "Portifólio 2026",
-	description: "Portifólio pessoal",
-};
+export async function generateMetadata(): Promise<Metadata> {
+	const acceptLanguage = (await headers()).get("accept-language") ?? "";
+	const messages = acceptLanguage.toLowerCase().startsWith("en") ? enMessages : ptBRMessages;
+
+	return {
+		title: messages.metadata.title,
+		description: messages.metadata.description,
+	};
+}
 
 export default function RootLayout({
 	children,

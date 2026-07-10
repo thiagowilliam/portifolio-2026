@@ -1,4 +1,8 @@
 {
+	"metadata": {
+		"title": "Thiago William | Senior Fullstack Developer",
+		"description": "Senior Fullstack Developer with 9+ years of experience in React, Next.js, NestJS, and applied AI. From design to deploy, I build scalable end-to-end products."
+	},
 	"navbar": {
 		"home": "Home",
 		"about": "About",

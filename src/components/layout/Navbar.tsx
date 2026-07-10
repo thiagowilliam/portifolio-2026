@@ -87,7 +87,7 @@ function Navbar() {
 				className="mx-auto flex max-w-7xl items-center justify-between px-12"
 				style={{ paddingTop: paddingY, paddingBottom: paddingY }}
 			>
-				<span className="font-mono text-[18px] font-bold text-primary">{"<dev.folio/>"}</span>
+				<span className="font-mono text-[18px] font-bold text-primary">{"<Thiago Will />"}</span>
 
 				<ul className="flex flex-row gap-8">
 					{NAV_LINKS.map((link) => {

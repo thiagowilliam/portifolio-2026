@@ -1,4 +1,8 @@
 {
+	"metadata": {
+		"title": "Thiago William | Desenvolvedor Fullstack Sênior",
+		"description": "Desenvolvedor Fullstack Sênior com +9 anos de experiência em React, Next.js, NestJS e IA aplicada. Do design ao deploy, construo produtos escaláveis de ponta a ponta."
+	},
 	"navbar": {
 		"home": "Home",
 		"about": "Sobre",
