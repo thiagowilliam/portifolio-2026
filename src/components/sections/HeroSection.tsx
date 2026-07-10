@@ -52,7 +52,12 @@ function TypingName({ name }: { name: string }) {
 				aria-hidden="true"
 				className="ml-0.5 inline-block h-[0.85em] w-0.75 translate-y-px rounded-sm bg-foreground"
 				animate={{ opacity: [1, 0] }}
-				transition={{ duration: 0.6, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", ease: "linear" }}
+				transition={{
+					duration: 0.6,
+					repeat: Number.POSITIVE_INFINITY,
+					repeatType: "reverse",
+					ease: "linear",
+				}}
 			/>
 		</span>
 	);
@@ -83,7 +88,9 @@ function HeroSection() {
 				<Button
 					variant="default"
 					className="px-7 py-3 font-mono text-[13px] font-semibold tracking-[0.05em]"
-					onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+					onClick={() =>
+						document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+					}
 				>
 					{t("cta_work")}
 				</Button>

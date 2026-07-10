@@ -1,11 +1,13 @@
 "use client";
 
+import { Download, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/sections/SectionHeader";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 const experienceTags = [
-	["Next.js", "TypeScript", "TailwindCSS", "Micro-frontends"],
+	["React", "TypeScript", "Context API", "React Query", "Vite", "Figma", "Ant Design UI", "RESTful APIs", "React Testing Library", "Git", "NestJS", "PostgreSQL", "Keycloak"],
 	["React", "Angular", "TailwindCSS"],
 	["React", "JavaScript", "CSS"],
 ];
@@ -43,7 +45,7 @@ function ExperienceSection() {
 						{/* Card */}
 						<div className="flex-1 rounded-xl border border-border bg-card p-6">
 							<h3 className="text-base font-semibold text-foreground">{exp.title}</h3>
-							<p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+							<p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
 								{exp.description}
 							</p>
 							<div className="mt-4 flex flex-wrap gap-2">
@@ -56,6 +58,22 @@ function ExperienceSection() {
 						</div>
 					</div>
 				))}
+			</div>
+
+			{/* CTA buttons */}
+			<div className="mx-auto mt-12 flex max-w-225 justify-end gap-3">
+				<Button variant="outline" asChild>
+					<a href="#linkedin" target="_blank" rel="noopener noreferrer">
+						<Linkedin />
+						{t("linkedinButton")}
+					</a>
+				</Button>
+				<Button asChild>
+					<a href="/cv.pdf" download>
+						<Download />
+						{t("downloadButton")}
+					</a>
+				</Button>
 			</div>
 		</section>
 	);

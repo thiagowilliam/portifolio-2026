@@ -12,8 +12,8 @@ function ContactSection() {
 		{
 			icon: Mail,
 			label: t("email_label"),
-			value: "hello@devportfolio.com",
-			href: "mailto:hello@devportfolio.com",
+			value: "thiago.will.silva@gmail.com",
+			href: "mailto:thiago.will.silva@gmail.com",
 			socials: null,
 		},
 		{
@@ -29,9 +29,8 @@ function ContactSection() {
 			value: null,
 			href: null,
 			socials: [
-				{ icon: Github, href: "https://github.com", label: "GitHub" },
-				{ icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-				{ icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+				{ icon: Github, href: "https://github.com/thiagowilliam", label: "GitHub" },
+				{ icon: Linkedin, href: "https://www.linkedin.com/in/thiago-william/", label: "LinkedIn" },
 			],
 		},
 	];

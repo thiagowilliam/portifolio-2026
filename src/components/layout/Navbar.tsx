@@ -29,7 +29,9 @@ function useActiveSection() {
 			observers.push(observer);
 		}
 
-		return () => { for (const o of observers) o.disconnect(); };
+		return () => {
+			for (const o of observers) o.disconnect();
+		};
 	}, []);
 
 	return { activeSection, setActiveSection };

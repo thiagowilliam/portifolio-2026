@@ -8,17 +8,18 @@
 	},
 	"hero": {
 		"greeting_prefix": "Olá, sou ",
-		"greeting_name": "Alex Chen",
-		"role": "Desenvolvedor Frontend",
-		"description": "Crio experiências digitais excepcionais com tecnologias web modernas. Apaixonado por código limpo, design intuitivo e produtos que fazem a diferença.",
+		"greeting_name": "Thiago William",
+		"role": "Desenvolvedor Fullstack",
+		"description": "Do design ao deploy — construo produtos fullstack de ponta a ponta, unindo interfaces fluidas, arquiteturas escaláveis e IA aplicada.",
 		"cta_work": "Ver Projetos",
 		"cta_contact": "Entrar em Contato"
 	},
 	"about": {
 		"badge": "Sobre",
 		"title": "Sobre Mim",
-		"bio1": "Sou um Desenvolvedor Frontend com mais de 5 anos de experiência construindo aplicações web modernas e responsivas. Especializo-me no ecossistema React e tenho uma profunda paixão por criar interfaces intuitivas que performam de forma impecável.",
-		"bio2": "Minha abordagem combina arquitetura limpa com implementação pixel-perfect. Acredito que um grande software é construído na interseção entre excelência técnica e experiência de usuário bem pensada.",
+		"contactButton": "Entre em Contato",
+		"bio1": "Engenheiro de Software Sênior com mais de 9 anos de experiência construindo produtos fullstack escaláveis e de alta performance, de ponta a ponta. Minha formação em design gráfico me dá um diferencial raro: enxergo cada produto tanto com olhos de designer quanto de engenheiro.",
+		"bio2": "Minha abordagem une arquitetura limpa, implementação pixel-perfect e IA aplicada à experiência do usuário. Acredito que um grande produto nasce da interseção entre excelência técnica e design bem pensado.",
 		"stats": {
 			"projects": "PROJETOS",
 			"experience": "ANOS EXP.",
@@ -34,12 +35,14 @@
 		"badge": "Experiência",
 		"title": "Experiência Profissional",
 		"description": "Minha trajetória construindo aplicações web modernas em diferentes empresas e setores",
+		"linkedinButton": "Ver LinkedIn",
+		"downloadButton": "Baixar CV",
 		"items": [
 			{
-				"period": "2022 – Presente",
-				"company": "TeakData Solutions",
-				"title": "Desenvolvedor Frontend Sênior",
-				"description": "Liderou a migração da arquitetura frontend de Angular para React, melhorando a performance em 40%. Construiu bibliotecas de componentes reutilizáveis com TypeScript e Tailwind CSS. Mentorou desenvolvedores júnior e estabeleceu padrões de código e melhores práticas."
+				"period": "2025 – Presente",
+				"company": "NTT DATA",
+				"title": "Fullstack Developer",
+				"description": "Alocado na Serasa Experian, a maior empresa de análise de crédito e soluções de inteligência de dados do Brasil, com mais de 60 milhões de consultas mensais\n\n* Desenvolveu e implementou novas telas, funcionalidades e componentes reutilizáveis usando React e TypeScript com Ant Design como base, garantindo interfaces responsivas, acessíveis e escaláveis com padronização visual consistente.\n\n* Contribuiu para a camada de BFF (Backend-for-Frontend) baseada em NestJS, implementando e integrando endpoints REST e realizando a modelagem de dados em PostgreSQL dentro de uma arquitetura multi-tenant.\n\n* Projetou e implementou um sistema de exportação em massa de arquivos CSV que processa milhares de UUIDs simultaneamente, eliminando processos manuais repetitivos e aumentando a produtividade operacional em 60%.\n\n* Reestruturou e otimizou a principal tela de gerenciamento de regras da aplicação, implementando melhorias arquiteturais com Context API e React Query que resultaram em 40% de redução no tempo de carregamento e 35% de otimização na performance de filtros.\n\n* Mentorou desenvolvedores frontend e participou ativamente de decisões técnicas e arquiteturais, colaborando com times multidisciplinares (QA, Designers, PO, PM e Backend) para garantir entregas de alta qualidade e escalabilidade do produto.\n\n* Implementou testes automatizados com React Testing Library e utilizou GitLab CI/CD com Git Flow para garantir processos de desenvolvimento organizados, code reviews eficientes e deploys automatizados e seguros."
 			},
 			{
 				"period": "2021 – 2022",
@@ -82,7 +85,7 @@
 		"description": "Tem um projeto em mente? Vamos trabalhar juntos para construir algo incrível.",
 		"email_label": "Email",
 		"location_label": "Localização",
-		"location_value": "São Paulo, Brasil",
+		"location_value": "Brasilia/DF, Brasil",
 		"social_label": "Redes Sociais",
 		"whatsapp_title": "WhatsApp",
 		"whatsapp_description": "Prefere conversar pelo WhatsApp? Me chame para uma resposta mais rápida!",

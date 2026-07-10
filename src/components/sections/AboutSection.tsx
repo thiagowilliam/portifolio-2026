@@ -1,18 +1,16 @@
 "use client";
 
+import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Fragment } from "react";
 import { SectionHeader } from "@/components/sections/SectionHeader";
+import { Button } from "@/components/ui/button";
 
 function AboutSection() {
 	const t = useTranslations("about");
 
-	const stats = [
-		{ value: "50+", label: t("stats.projects") },
-		{ value: "5+", label: t("stats.experience") },
-		{ value: "20+", label: t("stats.clients") },
-	];
+	const stats = [{ value: "9+", label: t("stats.experience") }];
 
 	return (
 		<section id="about" className="bg-surface px-30 py-20">
@@ -23,8 +21,7 @@ function AboutSection() {
 				{/* Left: foto */}
 				<div className="w-full">
 					<div className="relative h-105 w-full overflow-hidden rounded-xl bg-card">
-						{/* Substitua por sua foto em /public/about-photo.jpg */}
-						<Image src="/about-photo.jpg" alt="Developer at work" fill className="object-cover" />
+						<Image src="/about-photo.jpeg" alt="Developer at work" fill className="object-cover" />
 					</div>
 				</div>
 
@@ -48,6 +45,23 @@ function AboutSection() {
 								</div>
 							</Fragment>
 						))}
+					</div>
+
+					{/* CTA + Social */}
+					<div className="flex items-center gap-3">
+						<Button asChild>
+							<a href="#contact">{t("contactButton")}</a>
+						</Button>
+						<Button variant="outline" size="icon" asChild>
+							<a href="https://github.com/thiagowilliam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<Github />
+							</a>
+						</Button>
+						<Button variant="outline" size="icon" asChild>
+							<a href="https://www.linkedin.com/in/thiago-william/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+								<Linkedin />
+							</a>
+						</Button>
 					</div>
 				</div>
 			</div>

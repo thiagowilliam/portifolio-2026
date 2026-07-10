@@ -1,7 +1,7 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
 import { ArrowUp } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 function BackToTop() {
@@ -11,10 +11,10 @@ function BackToTop() {
 		const about = document.getElementById("about");
 		if (!about) return;
 
-		const observer = new IntersectionObserver(
-			([entry]) => setVisible(!entry.isIntersecting),
-			{ rootMargin: "0px 0px 0px 0px", threshold: 0 },
-		);
+		const observer = new IntersectionObserver(([entry]) => setVisible(!entry.isIntersecting), {
+			rootMargin: "0px 0px 0px 0px",
+			threshold: 0,
+		});
 
 		observer.observe(about);
 		return () => observer.disconnect();

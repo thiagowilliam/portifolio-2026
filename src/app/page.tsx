@@ -21,7 +21,7 @@ export default function Home() {
 				<ContactSection />
 			</main>
 			<BackToTop />
-		<Footer />
+			<Footer />
 		</>
 	);
 }

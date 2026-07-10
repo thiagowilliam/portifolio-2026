@@ -8,17 +8,18 @@
 	},
 	"hero": {
 		"greeting_prefix": "Hi, I'm ",
-		"greeting_name": "Alex Chen",
-		"role": "Frontend Developer",
-		"description": "I craft exceptional digital experiences with modern web technologies. Passionate about clean code, intuitive design, and building products that make a difference.",
+		"greeting_name": "Thiago William",
+		"role": "Fullstack Developer",
+		"description": "From design to deploy — I ship end-to-end fullstack products, blending fluid interfaces, scalable architectures, and applied AI.",
 		"cta_work": "View My Work",
 		"cta_contact": "Get In Touch"
 	},
 	"about": {
 		"badge": "About",
 		"title": "About Me",
-		"bio1": "I'm a Frontend Developer with 5+ years of experience building modern, responsive web applications. I specialize in the React ecosystem and have a deep passion for creating intuitive interfaces that perform flawlessly.",
-		"bio2": "My approach combines clean architecture with pixel-perfect implementation. I believe great software is built at the intersection of technical excellence and thoughtful user experience.",
+		"contactButton": "Get In Touch",
+		"bio1": "Senior Software Engineer with over 9 years of experience building scalable, high-performance fullstack products, end to end. My graphic design background gives me a rare edge: I see every product through both a designer's and an engineer's eyes.",
+		"bio2": "My approach combines clean architecture, pixel-perfect implementation, and applied AI focused on user experience. I believe great products are born at the intersection of technical excellence and thoughtful design.",
 		"stats": {
 			"projects": "PROJECTS",
 			"experience": "YRS EXP.",
@@ -34,12 +35,14 @@
 		"badge": "Experience",
 		"title": "Professional Experience",
 		"description": "My journey building modern web applications across different companies and industries",
+		"linkedinButton": "View LinkedIn",
+		"downloadButton": "Download CV",
 		"items": [
 			{
-				"period": "2022 – Present",
-				"company": "TeakData Solutions",
-				"title": "Senior Frontend Developer",
-				"description": "Led frontend architecture migration from Angular to React, improving performance by 40%. Built reusable component libraries with TypeScript and Tailwind CSS. Mentored junior developers and established code standards and best practices."
+				"period": "2025 – Present",
+				"company": "NTT DATA",
+				"title": "Fullstack Developer",
+				"description": "Allocated at Serasa Experian, Brazil's largest credit analysis and data intelligence solutions company, with over 60 million monthly queries\n\n* Developed and implemented new screens, features, and reusable components using React and TypeScript with Ant Design as foundation, ensuring responsive, accessible, and scalable interfaces with consistent visual standardization.\n\n* Contributed to the NestJS-based BFF (Backend-for-Frontend) layer, implementing and integrating REST endpoints and handling data modeling in PostgreSQL within a multi-tenant architecture.\n\n* Designed and implemented a bulk CSV file export system that processes thousands of UUIDs simultaneously, eliminating repetitive manual processes and increasing operational productivity by 60%.\n\n* Restructured and optimized the main application rules management screen, implementing architectural improvements with Context API and React Query that resulted in 40% reduction in loading time and 35% optimization in filter performance.\n\n* Mentored frontend developers and actively participated in technical and architectural decisions, collaborating with cross-functional teams (QA, Designers, PO, PM, and Backend) to ensure high-quality deliveries and product scalability.\n\n* Implemented automated tests with React Testing Library and utilized GitLab CI/CD with Git Flow to ensure organized development processes, efficient code reviews, and secure automated deployments."
 			},
 			{
 				"period": "2021 – 2022",
@@ -82,14 +85,14 @@
 		"description": "Have a project in mind? Let's work together to build something amazing.",
 		"email_label": "Email",
 		"location_label": "Location",
-		"location_value": "São Paulo, Brazil",
+		"location_value": "Brasilia/DF, Brazil",
 		"social_label": "Social",
 		"whatsapp_title": "WhatsApp",
 		"whatsapp_description": "Prefer to chat on WhatsApp? Message me for a faster response!",
 		"whatsapp_cta": "Start conversation"
 	},
 	"footer": {
-		"copyright": "© 2025 devPortfolio. Built with Next.js & Tailwind CSS.",
+		"copyright": "© 2026 devPortfolio. Built with Next.js & Tailwind CSS.",
 		"home": "Home",
 		"about": "About",
 		"projects": "Projects",
