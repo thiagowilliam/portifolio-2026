@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, MapPin, MessageCircle, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
@@ -95,7 +95,7 @@ function ContactSection() {
 					</div>
 				</div>
 				<Button className="shrink-0 bg-white/20 text-[#0A0F1C] hover:bg-white/30" asChild>
-					<a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
+					<a href="https://wa.me/5561993834848" target="_blank" rel="noreferrer">
 						{t("whatsapp_cta")}
 					</a>
 				</Button>

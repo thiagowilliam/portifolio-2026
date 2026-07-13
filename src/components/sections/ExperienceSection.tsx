@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 
 const experienceTags = [
 	["React", "TypeScript", "Context API", "React Query", "Vite", "Figma", "Ant Design UI", "RESTful APIs", "React Testing Library", "Git", "NestJS", "PostgreSQL", "Keycloak"],
-	["React", "Angular", "TailwindCSS"],
-	["React", "JavaScript", "CSS"],
+	[ "Angular V13",  "TypeScript", "Figma", "RESTful APIs", "Jasmine", "Jest", "Storybook", "Git"],
+	["React", "TypeScript", "Redux", "Figma", "Semantic UI", "RESTful APIs", "React Testing Library", "Git"],
 ];
 
 function ExperienceSection() {

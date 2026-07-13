@@ -49,16 +49,16 @@
 				"description": "Allocated at Serasa Experian, Brazil's largest credit analysis and data intelligence solutions company, with over 60 million monthly queries\n\n* Developed and implemented new screens, features, and reusable components using React and TypeScript with Ant Design as foundation, ensuring responsive, accessible, and scalable interfaces with consistent visual standardization.\n\n* Contributed to the NestJS-based BFF (Backend-for-Frontend) layer, implementing and integrating REST endpoints and handling data modeling in PostgreSQL within a multi-tenant architecture.\n\n* Designed and implemented a bulk CSV file export system that processes thousands of UUIDs simultaneously, eliminating repetitive manual processes and increasing operational productivity by 60%.\n\n* Restructured and optimized the main application rules management screen, implementing architectural improvements with Context API and React Query that resulted in 40% reduction in loading time and 35% optimization in filter performance.\n\n* Mentored frontend developers and actively participated in technical and architectural decisions, collaborating with cross-functional teams (QA, Designers, PO, PM, and Backend) to ensure high-quality deliveries and product scalability.\n\n* Implemented automated tests with React Testing Library and utilized GitLab CI/CD with Git Flow to ensure organized development processes, efficient code reviews, and secure automated deployments."
 			},
 			{
-				"period": "2021 – 2022",
-				"company": "Digital Agency Plus",
+				"period": "2023 – 2025",
+				"company": "ACT Digital",
 				"title": "Frontend Developer",
-				"description": "Developed responsive web applications using React and Angular for clients in fintech and e-commerce. Implemented design systems with Tailwind CSS, reducing development time by 30%. Collaborated with UX designers to deliver pixel-perfect interfaces."
+				"description": "Allocated at SICOOB, the third-largest banking cooperative in Brazil, where I enhanced application performance and reduced response times.\n\n* Developed and optimized applications using Angular, implementing new features and ensuring efficient, responsive, and accessible interfaces.\n\n* Applied modern inclusive design practices, standardizing visuals through Storybook, reducing development time for new interfaces by 15% through component reuse.\n\n* Implemented integrations with RESTful APIs, optimizing data consumption and reducing loading times by 25%, resulting in a smoother user experience.\n\n* Redesigned forms using Reactive Forms, decreasing the average response time from 2 seconds to less than 1 second and improving responsiveness by 40%.\n\n* Built and maintained automated tests with Jasmine and Jest, increasing code coverage and reducing production bugs by 30%.\n\n* Applied clean code principles and advanced front-end techniques to enhance application performance and scalability."
 			},
 			{
-				"period": "2019 – 2021",
-				"company": "Startups Brazil",
-				"title": "Junior Frontend Developer",
-				"description": "Built interactive user interfaces with React and JavaScript for early-stage startups. Integrated REST APIs, implemented responsive layouts, and contributed to improving web accessibility standards across multiple products."
+				"period": "2021 – 2023",
+				"company": "South System",
+				"title": "Frontend Developer",
+				"description": "Allocated at Getnet, a top payment solutions provider in Latin America (part of the Santander Group), where I optimized systems to reduce data redundancies.\n\n* Developed and optimized applications using React, implementing new features and ensuring efficient, responsive, and accessible user interfaces.\n\n* Applied Semantic UI to deliver consistent and visually appealing designs, accelerating the development process for reusable components by 15%.\n\n* Integrated Redux for state management, optimizing application performance and reducing data-fetching redundancies by 25%, resulting in smoother user interactions.\n\n* Connected and optimized RESTful APIs, streamlining data consumption and reducing loading times by 30%, significantly enhancing the user experience.\n\n* Redesigned forms using React Hook Form, reducing the average response time from 1.5 seconds to under 800ms, improving responsiveness by 45%.\n\n* Built and maintained automated tests with React Testing Library, increasing code coverage and reducing production bugs by 25%.\n\nKey Tools and Technologies: React, TypeScript, Redux, Figma, Semantic UI, RESTful APIs, React Testing Library, Git."
 			}
 		]
 	},
