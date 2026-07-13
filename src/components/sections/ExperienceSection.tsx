@@ -63,13 +63,13 @@ function ExperienceSection() {
 			{/* CTA buttons */}
 			<div className="mx-auto mt-12 flex max-w-225 justify-end gap-3">
 				<Button variant="outline" asChild>
-					<a href="#linkedin" target="_blank" rel="noopener noreferrer">
+					<a href="https://www.linkedin.com/in/thiago-william" target="_blank" rel="noopener noreferrer">
 						<Linkedin />
 						{t("linkedinButton")}
 					</a>
 				</Button>
 				<Button asChild>
-					<a href="/cv.pdf" download>
+					<a href="/resume-thiago-william-fullstack.pdf" download>
 						<Download />
 						{t("downloadButton")}
 					</a>
